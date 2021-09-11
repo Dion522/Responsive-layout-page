@@ -1,0 +1,190 @@
+
+*{
+    box-sizing: border-box;
+}
+html{
+    font-size: 1.25em;
+}
+.main-header h1{
+    text-align: center;
+}
+
+
+
+body{
+    font-family: 'IBM Plex Sans', sans-serif;
+    font-weight: 300;
+    color: rgb(80, 79, 79);
+    background-color: rgb(242, 248, 248)
+    ;
+    
+}
+h2{
+    text-align: center;
+}
+
+p{
+    font-size: 1.25em;
+    text-align: center;
+    
+    
+}
+ul {
+   
+    list-style-type: none;
+    
+   
+}
+hr{
+    
+    width: 95%
+    
+}
+ul.main-nav li{
+   
+    border-style: solid;
+        border-color: floralwhite;
+        background-color: floralwhite;
+        margin: 4px;
+        padding: 4px;
+    text-align: center;
+    
+}
+li{
+    margin:4px;
+    padding:4px;
+}
+
+
+a {
+    color: rgb(80, 79, 79);
+    text-decoration: none;
+}
+
+  
+.profile-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 2em;
+    padding-bottom: 2em;
+    width:  75%    
+    
+}
+.images{
+    width: 100%;
+    align-self: center;
+}
+.main-nav {
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 0px;
+    
+}
+.portfolio{
+    
+    padding-bottom: 2em;
+}
+
+.row{
+
+margin-top: 2em;
+margin-bottom: 2em;
+padding-top: 2em;
+padding-bottom: 2em;
+background-color: white;
+}
+.col {
+	padding-right: 1em;
+	padding-left: 1em;
+}
+.contact{
+    text-align: center;
+    padding-bottom: 2em;
+}
+footer{
+font-weight: 600;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+
+.footer-nav{
+    display: flex;
+    justify-content: flex-end;
+}
+
+.full{
+    display: none;
+   
+}
+
+
+
+
+
+
+
+/* Media queries */
+@media (min-width:768px){
+    .main-header, .main-nav{
+        display: flex;
+        
+
+    }
+    .main-header{
+        flex-direction: column;
+    }
+    .main-nav{
+        align-self: center;
+    }
+    ul.main-nav li{
+        border-style: unset;
+        border-color: unset;
+        background-color:unset;
+        margin: 4px;
+        padding: 4px;
+    text-align: center;
+    }
+    
+     
+    .img-header {
+        display:flex;
+        flex-direction: row-reverse;
+         
+        
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+      }
+      .col {
+        flex-basis: 50%;
+      }
+      h2.portfolio {
+        flex-basis: 100%;
+      }
+      .top{
+          display: none;
+      }
+      .full{
+          display: unset;
+      }
+}
+
+@media (min-width:1024px){
+    .main-header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .main-nav {
+        align-self: flex-end;
+    }
+    .col{
+        flex-basis: 30%;
+    }
+
+}
