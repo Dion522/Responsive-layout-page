@@ -107,6 +107,7 @@ background-color: white;
 }
 footer{
 font-weight: 600;
+font-size: 16px;
 }
 .footer{
     display: flex;
@@ -121,6 +122,7 @@ font-weight: 600;
     display: flex;
     justify-content: flex-end;
     column-gap: 20px;
+    padding-left: 0px;
 }
 
 .full{
